@@ -34,7 +34,7 @@ class SolrDocument
   # ...existing code...
 
   include Blacklight::Ris::DocumentFields
-  use_extension(Blacklight::Ris:DocumentExport)
+  use_extension(Blacklight::Ris::DocumentExport)
 
   ris_field_mappings.merge!(
     # Procs are evaluated in context of SolrDocument instance
